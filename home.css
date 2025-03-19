@@ -1,0 +1,41 @@
+:root {
+    --cor-branco-comeco-bloco: #F0F0F0;
+    --cor-cinza-fim-bloco: #E4E0E1;
+
+
+    --cor-bege-navbar: #D6C0B3;
+    --cor-marrom-rodape: #493628;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* CSS DA NAVBAR */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.8rem;
+    background-color: transparent;
+}
+
+
+.logomarca {
+    padding-left: 2rem;
+}
+
+
+.cabecalho__itens {
+    padding-right: 2rem;
+}
+
+
+.cabecalho__item {
+    padding: 1.3rem;
+    font-size: 1.2em;
+    text-decoration: none;
+}
