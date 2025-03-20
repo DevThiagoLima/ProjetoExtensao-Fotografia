@@ -1,20 +1,59 @@
 :root {
+
+    /* VARIAVEIS DE CORES */
+
     --cor-branco-comeco-bloco: #F0F0F0;
-    --cor-cinza-fim-bloco: #E4E0E1;
+    --cor-cinza-fim-bloco: #BCCCDC;
 
 
     --cor-bege-navbar: #D6C0B3;
     --cor-marrom-rodape: #493628;
+
+
+
+    /* VARIAVEIS DE FONTES */
+
+    --fonte-nav-bar: monospace, sans-serif;
 }
 
 
 * {
     padding: 0;
     margin: 0;
+    gap: 0;
+    
+}
+
+body {
+    font-family: var(--fonte-nav-bar);
 }
 
 
 /* CSS DA NAVBAR */
+
+.secao1_carrossel {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh; /* Define a altura como a tela toda */
+    background-size: cover;
+    background-position: center;
+    animation: changeBackground 10s infinite;
+}
+@keyframes changeBackground {
+    0%, 100% {
+        background-image: url('imgs/imgs_home/sec1_carrossel/foto1.jpg');
+    }
+    33% {
+        background-image: url('imgs/imgs_home/sec1_carrossel/foto2.jpg');
+    }
+    66% {
+        background-image: url('imgs/imgs_home/sec1_carrossel/foto3.jpg');
+    }
+}
+
+
 
 .cabecalho {
     display: flex;
@@ -36,6 +75,65 @@
 
 .cabecalho__item {
     padding: 1.3rem;
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-decoration: none;
+    color: white;
+}
+
+
+.div__seta__carrossel {
+    display: flex;
+    justify-content: center;
+}
+.seta__carrossel {
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    bottom: 0;
+
+    transform: translate(-50%, -50%);
+    animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-20px);
+    }
+}
+
+
+/* CSS - SEÇÃO 2 - TRABALHOS RECENTES */
+
+.secao2__titulo {
+    font-size: 3em;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.div1__trabalhos, .div2__trabalhos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.trabalhos__imagem {
+    width: 33.33%;
+    height: 400px;
+}
+
+.secao2__botao {
+    font-size: 2em;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--cor-cinza-fim-bloco);
+}
+.secao2__vejaMais {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(19 19 19 / 90%);
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+    border: solid black;
 }
