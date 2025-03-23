@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;400&display=swap');
+
 :root {
 
     /* VARIAVEIS DE CORES */
@@ -13,7 +15,11 @@
 
     /* VARIAVEIS DE FONTES */
 
-    --fonte-nav-bar: monospace, sans-serif;
+    --font-titulo: "Roboto", sans-serif;
+    --weight-titulo: 400;
+
+    --font-texto: "Roboto", sans-serif;
+    --weight-texto: 200;
 }
 
 
@@ -24,8 +30,9 @@
     
 }
 
-body {
-    font-family: var(--fonte-nav-bar);
+.fim__de__bloco {
+    background-color: var(--cor-cinza-fim-bloco);
+    color: var(--cor-cinza-fim-bloco);
 }
 
 
@@ -60,6 +67,8 @@ body {
     justify-content: space-between;
     padding: 1.8rem;
     background-color: transparent;
+    font-family: var(--font-titulo);
+    font-weight: var(--weight-titulo);
 }
 
 
@@ -110,6 +119,8 @@ body {
     font-size: 3em;
     padding: 2rem;
     text-align: center;
+    font-family: var(--font-titulo);
+    font-weight: var(--weight-titulo);
 }
 
 
@@ -122,6 +133,7 @@ body {
     width: 33.33%;
     height: 400px;
 }
+
 
 .secao2__botao {
     font-size: 2em;
@@ -136,4 +148,94 @@ body {
     border-radius: 8px;
     padding: 0.4rem 0.8rem;
     border: solid black;
+}
+
+
+
+/* CSS - SEÇÃO 3 - COMENTÁRIOS */
+
+.secao3__titulo {
+    font-size: 3em;
+    padding: 2rem;
+    text-align: center;
+    font-family: var(--font-titulo);
+    font-weight: var(--weight-titulo);
+}
+
+
+/* CSS - CARROSSEL - SEÇÃO 3 - COMENTÁRIOS */
+
+.box1 {
+    display: flex;
+    padding: 2rem 30rem 3rem 30rem;
+    justify-content: center;
+}
+.box1__img {
+    height: 350px;
+    width: 350px;
+    padding: 2  rem;
+    border-radius: 1.5rem;
+}
+.box1__texto1 {
+    font-size: 1.4em;
+    padding: 0.7rem 2.3rem;
+    text-align: center;
+    font-family: var(--font-texto);
+    font-weight: var(--weight-titulo);
+}
+.box1__texto2 {
+    font-size: 1em;
+    padding: 2rem;
+    text-align: center;
+    font-family: var(--font-texto);
+    font-weight: var(--weight-titulo);
+}
+.box1__cliente {
+    font-size: 0.9rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--font-texto);
+    font-weight: var(--weight-titulo);
+}
+
+
+
+/* CSS - SEÇÃO 4 - TIPOS DE ENSAIOS */
+
+.secao4__titulo {
+    font-size: 3em;
+    padding: 2rem;
+    text-align: center;
+    font-family: var(--font-titulo);
+    font-weight: var(--weight-titulo);
+}
+
+
+.div1__ensaios, .div2__ensaios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.ensaios__imagem {
+    width: 50%;
+    height: 450px;
+}
+
+
+/* CSS - RODAPE */
+
+.rodape {
+    display: flex;
+    background-color: var(--cor-marrom-rodape);
+    color: var(--cor-branco-comeco-bloco);
+    justify-content: space-around;
+    padding: 2rem;
+}
+.bloco__links {
+    align-items: center;
+}
+.rodape__link {
+    text-decoration: none;
+    color: var(--cor-cinza-fim-bloco);
+    padding: 2rem;
 }
