@@ -259,3 +259,11 @@
     font-size: 1.2em;
     color: var(--cor-marrom-rodape);
 }
+
+.div__links {
+    display: flex;
+}
+.rodape__icones {
+    padding-right: 0.4rem;
+    height: 1.5rem;
+}
