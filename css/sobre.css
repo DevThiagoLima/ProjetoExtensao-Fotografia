@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;400&display=swap');
+
+:root {
+
+    /* VARIAVEIS DE CORES */
+
+    --cor-branco-comeco-bloco: #F0F0F0;
+    --cor-cinza-fim-bloco: #BCCCDC;
+
+
+    --cor-bege-navbar: #D6C0B3;
+    --cor-marrom-rodape: #493628;
+
+
+
+    /* VARIAVEIS DE FONTES */
+
+    --font-titulo: "Roboto", sans-serif;
+    --weight-titulo: 400;
+
+    --font-texto: "Roboto", sans-serif;
+    --weight-texto: 200;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    
+}
+
+body {
+    background-color: var(--cor-cinza-fim-bloco);
+}
+
+/* CSS - NAVBAR */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.8rem;
+    background-color: transparent;
+    font-family: var(--font-titulo);
+    font-weight: var(--weight-titulo);
+    background-color: var(--cor-bege-navbar);
+}
+
+
+.logomarca {
+    padding-left: 2rem;
+}
+
+
+.cabecalho__itens {
+    padding-right: 2rem;
+}
+
+
+.cabecalho__item {
+    padding: 1.3rem;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* CSS - SEÇÃO 1 - SOBRE EMPRESA */
+
+.secao__sobre {
+    padding: 4rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    background-color: var(--cor-branco-comeco-bloco);
+}
+
+.div__sobre__empresa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lorgomarca {
+    padding: 2rem;
+}
+.sobre__empresa__titulo, .sobre__fotografa__titulo {
+    padding: 2rem;
+    font-family: var(--font-titulo);
+    font-weight: var(--weight-titulo);
+    font-size: 3em;
+}
+.sobre__empresa__texto, .sobre__fotografa__texto {
+    font-family: var(--font-texto);
+    font-weight: var(--weight-texto);
+    font-size: 2em;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    text-align: center;
+}
+
+.div__sobre__fotografa {
+    display: flex;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.foto__fotografa {
+    height: 450px;
+    border-radius: 1.5rem;
+}
+
+.div__sobre__fotografa__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+/* CSS - RODAPE */
+
+.bloco__rodape {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    padding-right: 9%;
+    padding-bottom: 1rem;
+    text-align: center;
+    background-color: var(--cor-bege-navbar);
+}
+
+
+.bloco__fotografa {
+    font-size: 1.2em;
+}
+
+
+.rodape__logomarca {
+    height: 8rem;
+}
+
+.links__titulo {
+    padding: 1rem;
+    text-decoration: none;
+    font-family: var(--font-titulo);
+    font-weight: var(--weight-titulo);
+    font-size: 1.2em;
+}
+.links__link {
+    padding: 1rem;
+    text-decoration: none;
+    font-family: var(--font-texto);
+    font-weight: var(--weight-texto);
+    font-size: 1.2em;
+    color: var(--cor-marrom-rodape);
+}
+
+.div__links {
+    display: flex;
+}
+.rodape__icones {
+    padding-right: 0.4rem;
+    height: 1.5rem;
+}
