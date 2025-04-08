@@ -79,8 +79,9 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.lorgomarca {
-    padding: 2rem;
+.logomarca {
+    height: 100px;
+    padding-left: 2rem;
 }
 .sobre__empresa__titulo, .sobre__fotografa__titulo {
     padding: 2rem;
