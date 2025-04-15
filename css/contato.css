@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;400&display=swap');
+
+:root {
+
+    /* VARIAVEIS DE CORES */
+
+    --cor-branco-comeco-bloco: #F0F0F0;
+    --cor-cinza-fim-bloco: #BCCCDC;
+
+
+    --cor-bege-navbar: #D6C0B3;
+    --cor-marrom-rodape: #493628;
+
+
+
+    /* VARIAVEIS DE FONTES */
+
+    --font-titulo: "Roboto", sans-serif;
+    --weight-titulo: 400;
+
+    --font-texto: "Roboto", sans-serif;
+    --weight-texto: 200;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    
+}
+
+body {
+    background-color: var(--cor-cinza-fim-bloco);
+}
+
+
+/* CSS - NAVBAR */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.8rem;
+    background-color: transparent;
+    font-family: var(--font-titulo);
+    font-weight: var(--weight-titulo);
+    background-color: var(--cor-bege-navbar);
+}
+
+
+.logomarca {
+    height: 100px;
+    padding-left: 2rem;
+}
+
+
+.cabecalho__itens {
+    padding-right: 2rem;
+}
+
+
+.cabecalho__item {
+    padding: 1.3rem;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* CSS - NAVBAR */
+
+.bloco__maior {
+    margin: 2rem;
+    padding: 4rem;
+    border-radius: 1rem;
+    background-color: var(--cor-branco-comeco-bloco);
+}
+
+
+
+/* CSS - BLOCO COMPLETO */
+
+.secao1___contato {
+  padding: 40px;
+}
+
+.bloco__maior {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Formulário */
+
+.contato__titulo {
+    font-family: var(--font-titulo);
+    font-style: italic;
+    font-size: 1.8em;
+    padding: 1rem;
+}
+
+.bloco__formulario {
+  width: 40%;
+  text-align: right;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.input__msg {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  font-size: 1.2em;
+}
+
+/* Divisória vertical */
+.divisoria {
+  width: 1px;
+  background-color: #ccc;
+  height: 100%;
+  min-height: 300px; /* ou ajuste conforme o conteúdo */
+  display: inline-block;
+}
+
+/* Redes Sociais */
+.redes__sociais {
+  width: 40%;
+  text-align: center;
+}
+
+.rs__img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.box_insta {
+  margin-bottom: 20px;
+}
