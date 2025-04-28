@@ -71,8 +71,6 @@ body {
 /* CSS - NAVBAR */
 
 .bloco__maior {
-    margin: 2rem;
-    padding: 4rem 18rem;
     border-radius: 1rem;
     background-color: var(--cor-branco-comeco-bloco);
 }
@@ -83,13 +81,17 @@ body {
 
 .box__geral {
   background-color: var(--cor-branco-comeco-bloco);
-  margin: 2rem;
+  margin: 3rem 5rem;
   border-radius: 2rem;
-  padding: 4rem;
+  padding: 4rem 8rem;
   display: flex;
-  align-items: center;
   text-align: center;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.form__titulo {
+  font-family: var(--font-texto);
+  font-weight: var(--font-titulo);
 }
 
 form {
@@ -97,6 +99,7 @@ form {
   flex-direction: column;
   gap: 15px;
   margin-top: 20px;
+  width: 18rem;
 }
 
 form input, form textarea {
@@ -124,8 +127,44 @@ form button:hover {
   background-color: #ddd;
 }
 
+
+/* CSS - DIVISORIA */
+
 .divisoria {
   width: 2px;        /* largura da linha */
   height: 25rem;     /* altura da linha */
   background-color: black;
+}
+
+
+
+/* CSS - LINKS */
+
+.rs__primeira__linha__fotos {
+  display: flex;
+}
+
+
+.rs__primeira__linha__fotos__conjunto {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.rs__imagem {
+  height: 8rem;
+  width: 8rem;
+  padding: 0px 1.5rem;
+}
+
+.rs__link {
+  margin-top: 1.5rem;
+  text-decoration: none;
+  font-family: var(--font-texto);
+  font-weight: var(--weight-texto);
+  font-size: 1.2em;
+  color: black;
+  border: solid black 2px;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
