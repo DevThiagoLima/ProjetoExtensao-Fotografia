@@ -72,7 +72,7 @@ body {
 
 .bloco__maior {
     margin: 2rem;
-    padding: 4rem;
+    padding: 4rem 18rem;
     border-radius: 1rem;
     background-color: var(--cor-branco-comeco-bloco);
 }
@@ -81,68 +81,51 @@ body {
 
 /* CSS - BLOCO COMPLETO */
 
-.secao1___contato {
-  padding: 40px;
-}
-
-.bloco__maior {
+.box__geral {
+  background-color: var(--cor-branco-comeco-bloco);
+  margin: 2rem;
+  border-radius: 2rem;
+  padding: 4rem;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
-/* Formulário */
-
-.contato__titulo {
-    font-family: var(--font-titulo);
-    font-style: italic;
-    font-size: 1.8em;
-    padding: 1rem;
-}
-
-.bloco__formulario {
-  width: 40%;
-  text-align: right;
-}
-
-.formulario {
+form {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  gap: 15px;
+  margin-top: 20px;
 }
 
-.input__msg {
-  width: 100%;
+form input, form textarea {
   padding: 10px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border-radius: 0.5rem;
-  font-size: 1.2em;
+  border: 1px solid #aaa;
+  border-radius: 5px;
 }
 
-/* Divisória vertical */
+form textarea {
+  resize: none;
+  height: 80px;
+}
+
+form button {
+  padding: 10px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #ddd;
+}
+
 .divisoria {
-  width: 1px;
-  background-color: #ccc;
-  height: 100%;
-  min-height: 300px; /* ou ajuste conforme o conteúdo */
-  display: inline-block;
-}
-
-/* Redes Sociais */
-.redes__sociais {
-  width: 40%;
-  text-align: center;
-}
-
-.rs__img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-.box_insta {
-  margin-bottom: 20px;
+  width: 2px;        /* largura da linha */
+  height: 25rem;     /* altura da linha */
+  background-color: black;
 }
