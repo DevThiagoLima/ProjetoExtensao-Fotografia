@@ -50,13 +50,13 @@
 }
 @keyframes changeBackground {
     0%, 100% {
-        background-image: url('imgs/imgs_home/sec1_carrossel/foto1.jpg');
+        background-image: url('imgs/imgs_home/sec1_carrossel/SC-01.jpg');
     }
     33% {
-        background-image: url('imgs/imgs_home/sec1_carrossel/foto2.jpg');
+        background-image: url('imgs/imgs_home/sec1_carrossel/SC-02.jpg');
     }
     66% {
-        background-image: url('imgs/imgs_home/sec1_carrossel/foto3.jpg');
+        background-image: url('imgs/imgs_home/sec1_carrossel/SC-03.jpg');
     }
 }
 
@@ -133,7 +133,7 @@
 }
 .trabalhos__imagem {
     width: 33.33%;
-    height: 400px;
+    height: 700px;
 }
 
 
