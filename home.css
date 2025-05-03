@@ -173,10 +173,10 @@
     justify-content: center;
 }
 .box1__img {
-    height: 350px;
-    width: 350px;
-    padding: 2  rem;
-    border-radius: 1.5rem;
+    height: 450px;
+    width: 450px;
+    padding: 1rem;
+    border-radius: 2.5rem;
 }
 .box1__texto1 {
     font-size: 1.4em;
