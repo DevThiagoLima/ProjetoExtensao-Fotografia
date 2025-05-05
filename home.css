@@ -5,7 +5,7 @@
     /* VARIAVEIS DE CORES */
 
     --cor-branco-comeco-bloco: #F0F0F0;
-    --cor-cinza-fim-bloco: #BCCCDC;
+    --cor-cinza-fim-bloco: #D6E2EA;
 
 
     --cor-bege-navbar: #D6C0B3;
@@ -146,10 +146,13 @@
 .secao2__vejaMais {
     text-decoration: none;
     color: white;
-    background-color: rgb(19 19 19 / 90%);
+    background-color: #5A6B7A;
     border-radius: 8px;
     padding: 0.4rem 0.8rem;
-    border: solid black;
+    border: 1px solid black;
+    font-family: var(--font-texto);
+    font-weight: var(--weight-texto);
+    font-size: 0.9em;
 }
 
 
@@ -169,8 +172,9 @@
 
 .box1 {
     display: flex;
-    padding: 2rem 30rem 3rem 30rem;
+    padding: 2rem 25rem 3rem 25rem;
     justify-content: center;
+    align-items: center;
 }
 .box1__img {
     height: 450px;
@@ -179,25 +183,27 @@
     border-radius: 2.5rem;
 }
 .box1__texto1 {
-    font-size: 1.4em;
-    padding: 0.7rem 2.3rem;
+    font-size: 1.35em;
+    padding: 0.7rem 1rem;
     text-align: center;
     font-family: var(--font-texto);
     font-weight: var(--weight-titulo);
+    font-style: italic;
 }
 .box1__texto2 {
-    font-size: 1em;
-    padding: 2rem;
+    font-size: 1.1em;
+    padding: 3rem;
     text-align: center;
     font-family: var(--font-texto);
     font-weight: var(--weight-titulo);
 }
 .box1__cliente {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     padding: 1rem;
     text-align: center;
-    font-family: var(--font-texto);
+    font-family: var(--font-titulo);
     font-weight: var(--weight-titulo);
+    font-style: italic;
 }
 
 
