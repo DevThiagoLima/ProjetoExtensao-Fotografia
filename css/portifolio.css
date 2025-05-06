@@ -46,13 +46,15 @@
 
 
 .logomarca {
-    height: 100px;
-    padding-left: 2rem;
+    height: 4rem;
+    width: 10rem;
+    padding-left: 3rem;
 }
 
 
 .cabecalho__itens {
     padding-right: 2rem;
+    padding-top: 1.5rem;
 }
 
 
@@ -96,10 +98,13 @@
 .secao2__vejaMais {
     text-decoration: none;
     color: white;
-    background-color: rgb(19 19 19 / 90%);
+    background-color: #5A6B7A;
     border-radius: 8px;
     padding: 0.4rem 0.8rem;
-    border: solid black;
+    border: 1px solid black;
+    font-family: var(--font-texto);
+    font-weight: var(--weight-texto);
+    font-size: 0.9em;
 }
 
 

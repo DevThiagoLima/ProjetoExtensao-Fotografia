@@ -48,14 +48,16 @@ body {
 
 
 .logomarca {
-    padding-left: 2rem;
+    height: 4rem;
+    width: 10rem;
+    padding-left: 3rem;
 }
 
 
 .cabecalho__itens {
     padding-right: 2rem;
+    padding-top: 1.5rem;
 }
-
 
 .cabecalho__item {
     padding: 1.3rem;
@@ -104,8 +106,9 @@ body {
     padding-right: 10rem;
 }
 .foto__fotografa {
-    height: 450px;
-    border-radius: 1.5rem;
+    height: 550px;
+    padding: 2rem;
+    border-radius: 3.5rem;
 }
 
 .div__sobre__fotografa__texto {
@@ -135,6 +138,7 @@ body {
 
 
 .rodape__logomarca {
+    padding-top: 2rem;
     height: 8rem;
 }
 
@@ -160,4 +164,8 @@ body {
 .rodape__icones {
     padding-right: 0.4rem;
     height: 1.5rem;
+}
+
+.lorgomarca_folhas {
+    height: 15rem;
 }

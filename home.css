@@ -74,13 +74,15 @@
 
 
 .logomarca {
-    height: 100px;
-    padding-left: 2rem;
+    height: 6rem;
+    width: 15rem;
+    padding-left: 3rem;
 }
 
 
 .cabecalho__itens {
     padding-right: 2rem;
+    padding-top: 1.5rem;
 }
 
 
