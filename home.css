@@ -138,6 +138,51 @@
     height: 700px;
 }
 
+.trabalho__card {
+    position: relative;
+    width: 33.33%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.trabalho__card img.trabalhos__imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.trabalho__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(200, 200, 200, 0.7); /* cinza claro transparente */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+    font-family: var(--font-texto);
+    font-weight: var(--weight-texto);
+}
+
+.trabalho__card:hover img.trabalhos__imagem {
+    filter: blur(3px);
+    transform: scale(1.05);
+}
+
+.trabalho__card:hover .trabalho__info {
+    opacity: 1;
+}
+
 
 .secao2__botao {
     font-size: 2em;
