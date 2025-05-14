@@ -79,7 +79,7 @@
 
 /* CSS - SEÇÃO 1 - ENSAIO GESTANTE */
 
-.secao1__titulo, .secao2__titulo, .secao3__titulo, .secao4__titulo {
+.secao2__titulo {
     font-size: 3em;
     padding: 2rem;
     text-align: center;
@@ -88,14 +88,63 @@
 }
 
 
-.div__ensaio__tema {
+.div1__trabalhos, .div2__trabalhos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.ensaio__tema__foto {
+.trabalhos__imagem {
     width: 33.33%;
-    height: 400px;
+    height: 700px;
+}
+
+.trabalho__card {
+    position: relative;
+    width: 33.33%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.trabalho__card img.trabalhos__imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.trabalho__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(200, 200, 200, 0.7); /* cinza claro transparente */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+    font-family: var(--font-texto);
+    font-weight: var(--weight-texto);
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.trabalho__card:hover img.trabalhos__imagem {
+    filter: blur(3px);
+    transform: scale(1.05);
+}
+
+.trabalho__card:hover .trabalho__info {
+    opacity: 1;
 }
 
 
@@ -115,6 +164,7 @@
     font-family: var(--font-texto);
     font-weight: var(--weight-texto);
     font-size: 0.9em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 
